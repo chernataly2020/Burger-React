@@ -2,6 +2,10 @@ import './order.css'
 import './goods.css'
 import './count.css'
 
+import burger_1 from "../../assets/img/burger_1.jpg";
+import hot_dog_1 from "../../assets/img/hot-dog_1.jpg";
+import free_1 from "../../assets/img/free_1.jpg";
+
 export const Order = () => {
   return (
     <div className="catalog__order order">
@@ -15,7 +19,7 @@ export const Order = () => {
         <div className="order__wrap_list">
           <ul className="order__list">
             <li className="order__item">
-              <img className="order__image" src="../..assets/img/burger_1.jpg" alt="Супер сырный" />
+              <img className="order__image" src={burger_1} alt="Супер сырный" />
 
               <div className="order__goods goods">
                 <h3 className="goods__title">Супер сырный</h3>
@@ -35,7 +39,7 @@ export const Order = () => {
             </li>
 
             <li className="order__item">
-              <img className="order__image" src="../..assets/img/free_1.jpg" alt="Картошка фри" />
+              <img className="order__image" src={free_1} alt="Картошка фри" />
 
               <div className="order__goods goods">
                 <h3 className="goods__title">Картошка фри</h3>
@@ -55,7 +59,7 @@ export const Order = () => {
             </li>
 
             <li className="order__item">
-              <img className="order__image" src="../..assets/img/hot-dog_1.jpg" alt="Жгучий хот-дог" />
+              <img className="order__image" src={hot_dog_1} alt="Жгучий хот-дог" />
 
               <div className="order__goods goods">
                 <h3 className="goods__title">Жгучий хот-дог</h3>

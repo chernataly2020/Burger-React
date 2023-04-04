@@ -3,6 +3,13 @@ import { Order } from "../Order/Order";
 import './catalog.css'
 import './product.css'
 
+import photo5 from "../../assets/img/photo-5.jpg";
+import photo1 from "../../assets/img/photo-1.jpg";
+import photo3 from "../../assets/img/photo-3.jpg";
+import photo from "../../assets/img/photo.jpg";
+import photo2 from "../../assets/img/photo-2.jpg";
+import photo4 from "../../assets/img/photo-4.jpg";
+
 export const Catalog = () => {
   return (
     <section className="catalog">
@@ -15,7 +22,7 @@ export const Catalog = () => {
             <ul className="catalog__list">
               <li className="catalog__item">
                 <article className="product">
-                  <img src="../../assets/img/photo-5.jpg" alt="Мясная бомба" className="product__image"/>
+                  <img src={photo5} alt="Мясная бомба" className="product__image"/>
 
                     <p className="product__price">689<span className="currency">₽</span></p>
 
@@ -31,7 +38,7 @@ export const Catalog = () => {
 
               <li className="catalog__item">
                 <article className="product">
-                  <img src="../../assets/img/photo-1.jpg" alt="Супер сырный" className="product__image"/>
+                  <img src={photo1} alt="Супер сырный" className="product__image"/>
 
                     <p className="product__price">550<span className="currency">₽</span></p>
 
@@ -47,7 +54,7 @@ export const Catalog = () => {
 
               <li className="catalog__item">
                 <article className="product">
-                  <img src="../../assets/img/photo-3.jpg" alt="Сытный" className="product__image"/>
+                  <img src={photo3} alt="Сытный" className="product__image"/>
 
                     <p className="product__price">639<span className="currency">₽</span></p>
 
@@ -63,7 +70,7 @@ export const Catalog = () => {
 
               <li className="catalog__item">
                 <article className="product">
-                  <img src="../../assets/img/photo.jpg" alt="Тяжелый удар" className="product__image"/>
+                  <img src={photo} alt="Тяжелый удар" className="product__image"/>
 
                     <p className="product__price">480<span className="currency">₽</span></p>
 
@@ -79,7 +86,7 @@ export const Catalog = () => {
 
               <li className="catalog__item">
                 <article className="product">
-                  <img src="../../assets/img/photo-2.jpg" alt="Вечная классика" className="product__image"/>
+                  <img src={photo2} alt="Вечная классика" className="product__image"/>
 
                     <p className="product__price">450<span className="currency">₽</span></p>
 
@@ -95,7 +102,7 @@ export const Catalog = () => {
 
               <li className="catalog__item">
                 <article className="product">
-                  <img src="../../assets/img/photo-4.jpg" alt="Итальянский" className="product__image"/>
+                  <img src={photo4} alt="Итальянский" className="product__image"/>
 
                     <p className="product__price">560<span className="currency">₽</span></p>
 
