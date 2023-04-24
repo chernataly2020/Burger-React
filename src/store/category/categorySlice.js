@@ -30,7 +30,7 @@ const categorySlice = createSlice({
       .addCase(categoryRequestAsync.fulfilled, (state, action) => {
         state.error = '';
         state.category = action.payload;
-      },)
+      })
       .addCase(categoryRequestAsync.rejected, (state, action) => {
         state.error = action.payload.error;
       })
