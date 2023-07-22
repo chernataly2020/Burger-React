@@ -7,7 +7,7 @@ import { useEffect } from 'react';
 import { productRequestAsync } from "../../store/product/productSlice.js";
 
 export const Catalog = () => {
-  const { products } = useSelector(state => state.product);
+  const { products, flag } = useSelector(state => state.product);
   const dispatch = useDispatch();
   const { category, activeCategory } = useSelector(state => state.category);
 
@@ -35,9 +35,11 @@ export const Catalog = () => {
                   ))}
                 </ul>
               ):(
-                <p className={style.empty}>
-                  К сожалению товаров в данной категории нет
-                </p>
+                  flag && (
+                    <p className={style.empty}>
+                      К сожалению товаров в данной категории нет
+                    </p>
+                  )
               )
             }
           </div>
